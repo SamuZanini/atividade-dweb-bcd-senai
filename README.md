@@ -1,73 +1,59 @@
-# Create Chico App
+# Task Manager - Gerenciamento de Rotinas
 
-Uma maneira moderna de iniciar projetos Next.js com configurações pré-definidas e componentes úteis.
+## 📋 Sobre o Projeto
 
-## Características
+Aplicação web para gerenciamento de tarefas e rotinas, inspirada em ferramentas como Trello e Planner. Desenvolvida como parte das atividades do curso de Análise e Desenvolvimento de Sistemas na Escola e Faculdade SENAI "Félix Guisard".
 
-- 🏃‍♂️ Next.js 15 com App Router e Turbopack
-- 💨 Tailwind V4 para estilização
-- 🎨 Tema claro/escuro com next-themes
-- 🧱 Componentes shadcn/ui pré-configurados
-- 🎯 Tipagem forte com TypeScript
-- 🧹 Formatação com Biome
+## 🛠️ Tecnologias Utilizadas
 
-## Início Rápido
+- React
+- Next.js
+- MySQL
+- TypeScript
 
-```bash
-bunx --use-bun create-chico-app
-cd meu-projeto
-bun install
-bun dev
-```
+## ⚙️ Funcionalidades
 
-Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
+- Criação e gerenciamento de tarefas
+- Organização por quadros e listas
+- Sistema de drag-and-drop
+- Categorização por etiquetas
+- Acompanhamento de prazos
+- Persistência de dados em MySQL
 
-## Adicionando Componentes shadcn/ui
+## 🚀 Como Executar
 
-⚠️ **Importante**: Ao adicionar novos componentes do shadcn/ui, sempre use a flag `@canary`:
+1. Clone o repositório
 
 ```bash
-bunx --bun shadcn@canary add button
+git clone [url-do-repositorio]
 ```
 
-Não use `@latest`, pois pode causar incompatibilidades com as versões mais recentes do Next.js e Tailwind CSS.
+2. Instale as dependências
 
-## Estrutura do Projeto
-
-```
-├── app/                # Rotas e páginas
-├── components/         # Componentes React
-│   ├── ui/            # Componentes shadcn/ui
-│   └── magicui/       # Componentes com efeitos especiais
-├── providers/         # Providers React (tema, etc)
-└── lib/              # Utilitários e configurações
+```bash
+npm install
 ```
 
-## Providers Disponíveis
+3. Configure o banco de dados
 
-O projeto já vem com os seguintes providers configurados:
+```bash
+# Configure suas variáveis de ambiente no arquivo .env
+```
 
-- `ThemeProvider`: Gerenciamento de tema (claro/escuro)
-- `TooltipProvider`: Gerenciamento de tooltips
+4. Execute o projeto
 
-Para adicionar novos providers, utilize o arquivo `providers/provider-wrapper.tsx`.
+```bash
+npm run dev
+```
 
-## Scripts Disponíveis
+## 🧙‍♂️ Colaboradores
 
-- `bun dev`: Inicia o servidor de desenvolvimento
-- `bun build`: Gera a build de produção
-- `bun start`: Inicia o servidor de produção
-- `bun lint`: Executa a verificação de linting
+- Samuel Zanini Campos Vanoni (https://github.com/SamuZanini)
+- Hugo Otávio dos Santos de Paula (https://github.com/HugOtavioS)
+- Murilo Marques Dantas Vieira (https://github.com/Murilomarques999)
+- João Vitor Nogueira Alves (https://github.com/Nogueirajv0078)
+- Misael Bonifácio Morgado (https://github.com/MisaelBM)
 
-## Aprenda Mais
+## 📄 Licença
 
-Para saber mais sobre as tecnologias utilizadas:
-
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Tailwind V4](https://tailwindcss.com/)
-- [shadcn/ui](https://ui.shadcn.com)
-- [Bun Runtime](https://bun.sh)
-
-## Deploy
-
-A maneira mais fácil de fazer deploy é usando a [Plataforma Vercel](https://vercel.com/new). Confira a [documentação de deploy do Next.js](https://nextjs.org/docs/app/building-your-application/deploying) para mais detalhes.
+Este projeto está sob a licença MIT.
